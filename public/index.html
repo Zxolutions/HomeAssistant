@@ -1,21 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Home Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">SmartHome</div>
+    <nav class="nav-links">
+      <a href="#">Dashboard</a>
+      <a href="#">Rooms</a>
+      <a href="#">Devices</a>
+      <a href="#">Settings</a>
+    </nav>
+  </header>
 
-    <!-- Site Title -->
-    <title>Smart Home Control Dashboard</title>
+  <!-- Main layout -->
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Moods</h3>
+      <ul>
+        <li><a href="#">Relax</a></li>
+        <li><a href="#">Focus</a></li>
+        <li><a href="#">Sleep</a></li>
+      </ul>
+      <h3>Preferences</h3>
+      <ul>
+        <li><a href="#">Themes</a></li>
+        <li><a href="#">Accessibility</a></li>
+      </ul>
+    </aside>
 
-    <!-- (Optional) SEO / Sharing -->
-    <meta name="description" content="Control your smart home devices with ease" />
-    <meta property="og:title" content="Smart Home Dashboard" />
-    <meta property="og:description" content="Manage your devices, rooms, and automations" />
-    <meta property="og:image" content="/logo.png" />
-  </head>
-  <body>
-    <!-- React injects app here -->
-    <div id="root"></div>
-  </body>
+    <!-- Content -->
+    <main class="content">
+      <h2>Dashboard</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h4>Living Room</h4>
+          <p>Lights: On</p>
+        </div>
+        <div class="card">
+          <h4>Thermostat</h4>
+          <p>22°C • Cooling</p>
+        </div>
+        <div class="card">
+          <h4>Security</h4>
+          <p>All systems normal</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
 </html>
