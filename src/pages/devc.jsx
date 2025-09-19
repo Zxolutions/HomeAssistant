@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { animate } from "animejs";
+import { animate} from "animejs";
 import DeviceModal from "../components/DeviceModal";
 
 export default function DevicesPage() {
