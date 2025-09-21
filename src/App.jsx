@@ -3,7 +3,7 @@ import RoomsPage from "./pages/rm";
 import DevicesPage from "./pages/devc";
 import HomeAssistantDashboard from "./pages/home";
 import SettingsPage from "./pages/sttngs";
-import animate from "animejs";
+import { animate } from "animejs";
 
 export default function App() {
   const [page, setPage] = useState("dashboard");
