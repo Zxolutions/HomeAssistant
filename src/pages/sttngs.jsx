@@ -149,7 +149,7 @@ export default function SettingsPage() {
         </section>
       </main>
 
-      <footer style={styles.footer}>Made with ❤️ — Anime.js + React + Vite</footer>
+      
     </div>
   );
 }

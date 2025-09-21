@@ -69,24 +69,34 @@ export default function DevicesPage() {
       top: 0,
       zIndex: 20,
     },
+    main: {
+      flex: 1,
+      overflowY: "auto",
+      display: "flex",
+      flexDirection: "column",
+
+    },
     section: {
       margin: "16px",
     },
     deviceList: {
-      display: "grid",
+      display: "flex",
+      flexWrap: "wrap",
       gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
+      justifyContent: "centre",
       gap: "16px",
       padding: "8px",
     },
     deviceCard: {
-      height: "150px",
+      width: "200px",
+      height: "200px",
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
-      borderRadius: "12px",
+      borderRadius: "24px",
       backgroundColor: "#1f2937",
-      border: "1px solid #00ff9d",
+      border: "2px solid #00ff9d",
       cursor: "pointer",
       color: "#00ff9d",
       boxShadow: "0 2px 6px rgba(0,255,157,0.3)",
@@ -108,10 +118,10 @@ export default function DevicesPage() {
         <div style={{ fontSize: "24px", fontWeight: 600 }}>Devices</div>
       </header>
 
-      <main>
+      <main style={styles.main}>
         <section style={styles.section}>
           <div style={{ fontSize: "18px", marginBottom: "8px", color: "#00ff9d" }}>
-            All Devices
+            Devices
           </div>
           <div style={styles.deviceList}>
             {devices.map((device, index) => (
@@ -129,11 +139,7 @@ export default function DevicesPage() {
           </div>
         </section>
       </main>
-
-      <footer style={styles.footer}>
-        Made with ❤️ — Anime.js + React + Vite
-      </footer>
-
+      
       {selectedDevice && (
         <DeviceModal
           device={selectedDevice}

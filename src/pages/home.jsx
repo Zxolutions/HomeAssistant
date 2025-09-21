@@ -170,7 +170,7 @@ export default function HomeAssistantDashboard() {
           </section>
         </main>
 
-        <footer style={styles.footer}>Made with ❤️ — Anime.js + React + Vite</footer>
+        
       </div>
     </div>
   );
